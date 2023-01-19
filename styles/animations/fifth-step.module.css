@@ -1,0 +1,104 @@
+@keyframes background {
+  to {
+    background-position: 0 -390px;
+  }
+}
+
+@keyframes monogram1 {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@keyframes monogram2 {
+  from {
+    width: 600px;
+    height: 600px;
+  }
+  to {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1ff48;
+    background-image: none !important;
+  }
+}
+
+@keyframes monogramText1 {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes monogramText2 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes image1 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes image2 {
+  to {
+    background-position: 0px -150px;
+  }
+}
+
+@keyframes imageText {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.background {
+  animation: background 4s linear infinite;
+  -webkit-animation: background 4s linear infinite;
+  background-size: 390px 390px;
+}
+
+.monogram {
+  animation: monogram1 1s ease-out forwards, monogram2 1s ease-out 2.5s forwards;
+  -webkit-animation: monogram1 1s ease-out forwards,
+    monogram2 1s ease-out 2.5s forwards;
+}
+
+.monogramText {
+  animation: monogramText1 0.5s ease-out 1s forwards,
+    monogramText2 0.5s ease-out 2.5s forwards;
+  -webkit-animation: monogramText1 0.5s ease-out 1s forwards,
+    monogramText2 0.5s ease-out 2.5s forwards;
+}
+
+.image {
+  animation: image1 0.5s ease-out 4s forwards, image2 10s ease-out 4s infinite;
+  -webkit-animation: image1 0.5s ease-out 4s forwards, image2 10s ease-out 4s infinite;
+}
+
+.imageText {
+  animation: imageText 0.5s ease-out 4s forwards;
+  -webkit-animation: imageText 0.5s ease-out 4s forwards;
+}

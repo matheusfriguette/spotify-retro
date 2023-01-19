@@ -1,0 +1,284 @@
+@keyframes firstStepBackground {
+  to {
+    background-position: -30px -120px;
+  }
+}
+
+@keyframes firstStepCircleFirstAnimation {
+  0% {
+    height: 384px;
+    width: 384px;
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@keyframes firstStepCircleSecondAnimation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes firstStepText1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes firstStepText2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.firstStep-background1 {
+  animation: firstStepBackground 2s linear infinite;
+  -webkit-animation: firstStepBackground 2s linear infinite;
+  background-image: radial-gradient(#f1ff48 40%, transparent 41%);
+  background-position: -30px -30px;
+  background-size: 90px 90px;
+  background-color: transparent;
+}
+
+.firstStep-background2 {
+  animation: firstStepBackground 2s linear infinite;
+  -webkit-animation: firstStepBackground 2s linear infinite;
+  background-image: radial-gradient(#f1ff48 40%, transparent 41%);
+  background-position: -30px -30px;
+  background-size: 90px 90px;
+  background-color: transparent;
+  transform: scale(1, -1);
+}
+
+.firstStep-circle {
+  animation: firstStepCircleFirstAnimation 1s ease-in 3s forwards,
+    firstStepCircleSecondAnimation 30s linear infinite;
+  -webkit-animation: firstStepCircleFirstAnimation 1s ease-in 3s forwards,
+    firstStepCircleSecondAnimation 30s linear infinite;
+  background-image: "url('/assets/first-circle.svg'";
+}
+
+.firstStep-text1 {
+  animation: firstStepText1 500ms ease-out 3500ms forwards;
+  -webkit-animation: firstStepText1 500ms ease-out 3500ms forwards;
+}
+
+.firstStep-text2 {
+  animation: firstStepText2 500ms ease-out 3500ms forwards;
+  -webkit-animation: firstStepText2 500ms ease-out 3500ms forwards;
+}
+
+@keyframes secondStepBackground {
+  to {
+    background-position: 0 173.3px;
+  }
+}
+
+@keyframes secondStepCircleFirstAnimation {
+  0% {
+    height: 64px;
+    width: 64px;
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  70% {
+    height: 100px;
+    width: 100px;
+  }
+  100% {
+    height: 600px;
+    width: 600px;
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes secondStepCircleSecondAnimation {
+  to {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f56ebd;
+    background-image: none !important;
+    display: flex;
+    direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+@keyframes secondStepText1FirstAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes secondStepText1SecondAnimation {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes secondStepText2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.secondStep-background {
+  animation: secondStepBackground 3s linear infinite;
+  -webkit-animation: secondStepBackground 3s linear infinite;
+}
+
+.secondStep-circle {
+  animation: secondStepCircleFirstAnimation 1s ease-in forwards,
+    secondStepCircleSecondAnimation 500ms ease-in 4500ms forwards;
+  -webkit-animation: secondStepCircleFirstAnimation 1s ease-in forwards,
+    secondStepCircleSecondAnimation 500ms ease-in 4500ms forwards;
+}
+
+.secondStep-text1 {
+  animation: secondStepText1FirstAnimation 500ms ease-out 1s forwards,
+    secondStepText1SecondAnimation 500ms ease-out 4500ms forwards;
+  -webkit-animation: secondStepText1FirstAnimation 500ms ease-out 1s forwards,
+    secondStepText1SecondAnimation 500ms ease-out 4500ms forwards;
+}
+
+.secondStep-text2 {
+  animation: secondStepText2 500ms ease-out 6s forwards;
+  -webkit-animation: secondStepText2 500ms ease-out 6s forwards;
+}
+
+@keyframes thirdStepBackground {
+  to {
+    background-position: -70px -70px;
+  }
+}
+
+@keyframes thirdStepCircle {
+  to {
+    height: 100vh;
+    width: 100vw;
+    background-color: #12D861;
+    background-image: none !important;
+    display: flex;
+    direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+@keyframes thirdStepText1FirstAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes thirdStepText1SecondAnimation {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes thirdStepText2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes thirdStepCover {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.thirdStep-background1 {
+  animation: thirdStepBackground 2s linear infinite;
+  -webkit-animation: thirdStepBackground 2s linear infinite;
+  background-size: 70px 70px;
+  background-color: transparent;
+}
+
+.thirdStep-background2 {
+  animation: thirdStepBackground 2s linear infinite;
+  -webkit-animation: thirdStepBackground 2s linear infinite;
+  background-size: 70px 70px;
+  background-color: transparent;
+  transform: scale(-1, 1);
+}
+
+.thirdStep-background3 {
+  animation: thirdStepBackground 2s linear infinite;
+  -webkit-animation: thirdStepBackground 2s linear infinite;
+  background-size: 70px 70px;
+  background-color: transparent;
+  transform: scale(1, -1);
+}
+
+.thirdStep-background4 {
+  animation: thirdStepBackground 2s linear infinite;
+  -webkit-animation: thirdStepBackground 2s linear infinite;
+  background-size: 70px 70px;
+  background-color: transparent;
+  transform: scale(-1, -1);
+}
+
+.thirdStep-circle {
+  animation: thirdStepCircle 500ms ease-in 4s forwards;
+  -webkit-animation: thirdStepCircle 500ms ease-in 4s forwards;
+}
+
+.thirdStep-text1 {
+  animation: thirdStepText1FirstAnimation 500ms ease-out 500ms forwards,
+    thirdStepText1SecondAnimation 500ms ease-out 4s forwards;
+  -webkit-animation: thirdStepText1FirstAnimation 500ms ease-out 500ms forwards,
+    thirdStepText1SecondAnimation 500ms ease-out 4s forwards;
+}
+
+.thirdStep-text2 {
+  animation: thirdStepText2 500ms ease-out 5s forwards;
+  -webkit-animation: thirdStepText2 500ms ease-out 5s forwards;
+}
+
+.thirdStep-cover {
+  animation: thirdStepCover 500ms ease-out 5s forwards;
+  -webkit-animation: thirdStepCover 500ms ease-out 5s forwards;
+}
