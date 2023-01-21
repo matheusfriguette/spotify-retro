@@ -43,7 +43,7 @@ const FourthStep = ({ updateStep }: Props) => {
       ></div>
 
       <div
-        className={`absolute bottom-[700px] z-10 h-40 w-40 bg-no-repeat opacity-0 ${styles.thirdSun}`}
+        className={`absolute top-[-30px] z-10 h-40 w-40 bg-no-repeat opacity-0 ${styles.thirdSun}`}
         style={{ backgroundImage: "url('/assets/fourth-step/6.svg')" }}
       ></div>
 

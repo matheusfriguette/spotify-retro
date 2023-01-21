@@ -26,45 +26,45 @@ const Header = ({ currentStep }: Props) => {
   }, [currentStep]);
 
   return (
-    <header className="from-neutral-800/80 absolute top-0 z-10 w-full bg-gradient-to-b px-4 pt-5 pb-8">
+    <header className="from-neutral-800/80 absolute top-0 z-50 w-full bg-gradient-to-b px-4 pt-5 pb-8">
       <div className="flex gap-0.5">
         <div className="relative h-0.5 flex-grow">
-          <div className="h-0.5 rounded-sm bg-white/30"></div>
+          <div className="h-0.5 rounded-sm bg-white/50"></div>
           <div
             ref={stepBarElements[1]}
             className="absolute top-0 h-0.5 w-0 rounded-sm bg-white transition-[width] duration-[8000ms] ease-linear"
           ></div>
         </div>
         <div className="relative h-0.5 flex-grow">
-          <div className="h-0.5 rounded-sm bg-white/30"></div>
+          <div className="h-0.5 rounded-sm bg-white/50"></div>
           <div
             ref={stepBarElements[2]}
             className="absolute top-0 h-0.5 w-0 rounded-sm bg-white transition-[width] duration-[16000ms] ease-linear"
           ></div>
         </div>
         <div className="relative h-0.5 flex-grow">
-          <div className="h-0.5 rounded-sm bg-white/30"></div>
+          <div className="h-0.5 rounded-sm bg-white/50"></div>
           <div
             ref={stepBarElements[3]}
             className="absolute top-0 h-0.5 w-0 rounded-sm bg-white transition-[width] duration-[10000ms] ease-linear"
           ></div>
         </div>
         <div className="relative h-0.5 flex-grow">
-          <div className="h-0.5 rounded-sm bg-white/30"></div>
+          <div className="h-0.5 rounded-sm bg-white/50"></div>
           <div
             ref={stepBarElements[4]}
             className="absolute top-0 h-0.5 w-0 rounded-sm bg-white transition-[width] duration-[18000ms] ease-linear"
           ></div>
         </div>
         <div className="relative h-0.5 flex-grow">
-          <div className="h-0.5 rounded-sm bg-white/30"></div>
+          <div className="h-0.5 rounded-sm bg-white/50"></div>
           <div
             ref={stepBarElements[5]}
             className="absolute top-0 h-0.5 w-0 rounded-sm bg-white transition-[width] duration-[15000ms] ease-linear"
           ></div>
         </div>
         <div className="relative h-0.5 flex-grow">
-          <div className="h-0.5 rounded-sm bg-white/30"></div>
+          <div className="h-0.5 rounded-sm bg-white/50"></div>
           <div
             ref={stepBarElements[6]}
             className="absolute top-0 h-0.5 w-0 rounded-sm bg-white transition-[width] duration-[20000ms] ease-linear"
