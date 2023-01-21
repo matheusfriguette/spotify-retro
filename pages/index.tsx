@@ -10,8 +10,8 @@ import FourthStep from "../components/fourth-step";
 import SixthStep from "../components/sixth-step";
 
 const Index = () => {
-  const [showFakeIntro, setShowFakeIntro] = useState(false);
-  const [currentStep, setCurrentStep] = useState<1 | 2 | 3 | 4 | 5 | 6>(6);
+  const [showFakeIntro, setShowFakeIntro] = useState(true);
+  const [currentStep, setCurrentStep] = useState<1 | 2 | 3 | 4 | 5 | 6>(1);
 
   const audioElement = useRef<HTMLAudioElement>(null);
 

@@ -26,7 +26,7 @@ const Header = ({ currentStep }: Props) => {
   }, [currentStep]);
 
   return (
-    <header className="from-neutral-800/80 absolute top-0 z-50 w-full bg-gradient-to-b border-b border-pink px-4 pt-5 pb-8">
+    <header className="from-neutral-800/80 absolute top-0 z-50 w-full bg-gradient-to-b px-4 pt-5 pb-8">
       <div className="flex gap-0.5">
         <div className="relative h-0.5 flex-grow">
           <div className="h-0.5 rounded-sm bg-white/50"></div>
