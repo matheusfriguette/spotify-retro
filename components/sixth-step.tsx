@@ -44,13 +44,13 @@ const SixthStep = () => {
             </div>
           </div>
 
-          <div className="absolute top-11 overflow-hidden w-full px-4">
+          <div className="absolute mt-16 top-0 overflow-hidden w-full px-4">
             <div
               className={`text-start text-2xl font-medium tracking-tighter opacity-0 ${styles.thirdText}`}
             >
               Muito obrigado por tudo
             </div>
-            <div className="flex flex-col justify-between gap-8 mt-4">
+            <div className="flex flex-col justify-between gap-4 mt-4">
               <div className="relative flex h-48 items-center justify-center">
                 <div
                   className={`absolute flex h-48 w-48 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.firstImageMonogram}`}

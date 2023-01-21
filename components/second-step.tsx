@@ -44,7 +44,7 @@ const SecondStep = ({ updateStep }: Props) => {
             <div className="text-xl font-medium tracking-tighter">
               Meus momentos favoritos
             </div>
-            <ul className="mt-10 flex flex-col gap-3">
+            <ul className="mt-4 flex flex-col gap-3">
               <li className="flex items-center gap-4">
                 <div className="w-7 min-w-[28px] text-4xl font-medium">1</div>
                 <div>
