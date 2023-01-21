@@ -44,54 +44,54 @@ const SixthStep = () => {
             </div>
           </div>
 
-          <div className="absolute top-10 overflow-hidden w-full px-4">
+          <div className="absolute top-11 overflow-hidden w-full px-4">
             <div
               className={`text-start text-2xl font-medium tracking-tighter opacity-0 ${styles.thirdText}`}
             >
               Muito obrigado por tudo
             </div>
             <div className="flex flex-col justify-between gap-8 mt-4">
-              <div className="relative flex h-56 items-center justify-center">
+              <div className="relative flex h-48 items-center justify-center">
                 <div
-                  className={`absolute flex h-56 w-56 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.firstImageMonogram}`}
+                  className={`absolute flex h-48 w-48 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.firstImageMonogram}`}
                   style={{
                     backgroundImage: "url('/assets/sixth-step/3.svg')",
                   }}
                 ></div>
                 <Image
-                  className={`absolute h-40 w-40 scale-0 object-cover ${styles.firstImage}`}
-                  width={160}
-                  height={160}
+                  className={`absolute h-32 w-32 scale-0 object-cover ${styles.firstImage}`}
+                  width={128}
+                  height={128}
                   src="/image/IMG_0141.JPEG"
                   alt="star"
                 />
               </div>
-              <div className="relative flex h-56 items-center justify-center">
+              <div className="relative flex h-48 items-center justify-center">
                 <div
-                  className={`absolute flex h-56 w-56 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.secondImageMonogram}`}
+                  className={`absolute flex h-48 w-48 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.secondImageMonogram}`}
                   style={{
                     backgroundImage: "url('/assets/sixth-step/4.svg')",
                   }}
                 ></div>
                 <Image
-                  className={`absolute h-40 w-40 scale-0 object-cover ${styles.secondImage}`}
-                  width={160}
-                  height={160}
+                  className={`absolute h-32 w-32 scale-0 object-cover ${styles.secondImage}`}
+                  width={128}
+                  height={128}
                   src="/image/IMG_0194.JPG"
                   alt="star"
                 />
               </div>
-              <div className="relative flex h-56 items-center justify-center">
+              <div className="relative flex h-48 items-center justify-center">
                 <div
-                  className={`absolute flex h-56 w-56 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.thirdImageMonogram}`}
+                  className={`absolute flex h-48 w-48 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.thirdImageMonogram}`}
                   style={{
                     backgroundImage: "url('/assets/sixth-step/5.svg')",
                   }}
                 ></div>
                 <Image
-                  className={`absolute h-40 w-40 scale-0 object-cover ${styles.thirdImage}`}
-                  width={160}
-                  height={160}
+                  className={`absolute h-32 w-32 scale-0 object-cover ${styles.thirdImage}`}
+                  width={128}
+                  height={128}
                   src="/image/IMG_0230.JPG"
                   alt="star"
                 />
