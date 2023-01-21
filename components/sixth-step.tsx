@@ -3,7 +3,7 @@ import styles from "../styles/animations/sixth-step.module.css";
 
 const SixthStep = () => {
   return (
-    <div className="flex relative h-full w-full flex-col items-center justify-center overflow-hidden bg-light-black">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden bg-light-black">
       <div className="absolute flex h-full w-full flex-col">
         <div
           className={`absolute bottom-[60px] left-[100px] h-4 w-4 bg-cover bg-no-repeat ${styles.firstStar}`}
@@ -44,13 +44,13 @@ const SixthStep = () => {
             </div>
           </div>
 
-          <div className="absolute mt-20 top-0 overflow-hidden w-full px-4">
+          <div className="absolute top-0 mt-12 w-full overflow-hidden px-4">
             <div
-              className={`text-start text-2xl font-medium tracking-tighter opacity-0 ${styles.thirdText}`}
+              className={`relative z-[60] text-start text-2xl font-medium tracking-tighter opacity-0 ${styles.thirdText}`}
             >
               Muito obrigado por tudo
             </div>
-            <div className="flex flex-col justify-between gap-4 mt-4">
+            <div className="mt-4 flex flex-col justify-between gap-4">
               <div className="relative flex h-48 items-center justify-center">
                 <div
                   className={`absolute flex h-48 w-48 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.firstImageMonogram}`}
