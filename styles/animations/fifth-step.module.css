@@ -89,7 +89,7 @@
 }
 
 .image {
-  animation: image1 0.5s ease-out 5s forwards, image2 12s ease-out 5s infinite;
+  animation: image1 0.5s ease-out 5s forwards, image2 12s linear 5s infinite;
 }
 
 .imageText {
