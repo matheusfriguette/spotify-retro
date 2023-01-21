@@ -46,7 +46,7 @@ const SixthStep = () => {
 
           <div className="absolute top-0 mt-20 w-full overflow-hidden px-4">
             <div
-              className={`relative z-[60] text-start text-2xl font-medium tracking-tighter opacity-0 ${styles.thirdText}`}
+              className={`relative z-[60] text-start text-2xl text-orange font-medium tracking-tighter opacity-0 ${styles.thirdText}`}
             >
               Muito obrigado por tudo
             </div>
