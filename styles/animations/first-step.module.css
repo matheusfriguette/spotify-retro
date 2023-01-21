@@ -1,0 +1,72 @@
+@keyframes background {
+  to {
+    background-position: -30px -120px;
+  }
+}
+
+@keyframes monogram1 {
+  0% {
+    height: 384px;
+    width: 384px;
+  }
+  100% {
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@keyframes monogram2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes firstText {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes secondText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.firstBackground {
+  animation: background 2s linear infinite;
+  background-image: radial-gradient(#f1ff48 40%, transparent 41%);
+  background-position: -30px -30px;
+  background-size: 90px 90px;
+  background-color: transparent;
+}
+
+.secondBackground {
+  animation: background 2s linear infinite;
+  background-image: radial-gradient(#f1ff48 40%, transparent 41%);
+  background-position: -30px -30px;
+  background-size: 90px 90px;
+  background-color: transparent;
+  transform: scale(1, -1);
+}
+
+.monogram {
+  animation: monogram1 1s ease-out 3s forwards, monogram2 30s linear infinite;
+}
+
+.firstText {
+  animation: firstText 500ms ease-out 3500ms forwards;
+}
+
+.secondText {
+  animation: secondText 500ms ease-out 3500ms forwards;
+}

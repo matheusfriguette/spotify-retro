@@ -6,27 +6,21 @@ import FirstStep from "../components/first-step";
 import SecondStep from "../components/second-step";
 import ThirdStep from "../components/third-step";
 import FifthStep from "../components/fifth-step";
+import FourthStep from "../components/fourth-step";
+import SixthStep from "../components/sixth-step";
 
 const Index = () => {
   const [showFakeIntro, setShowFakeIntro] = useState(true);
-  const [currentStep, setCurrentStep] = useState<1 | 2 | 3 | 4 | 5>(1);
+  const [currentStep, setCurrentStep] = useState<1 | 2 | 3 | 4 | 5 | 6>(1);
 
-  const audioElements = {
-    1: useRef<HTMLAudioElement>(null),
-    2: useRef<HTMLAudioElement>(null),
-    3: useRef<HTMLAudioElement>(null),
-    4: useRef<HTMLAudioElement>(null),
-    5: useRef<HTMLAudioElement>(null),
-  };
+  const audioElement = useRef<HTMLAudioElement>(null);
 
   const onFakeButtonClick = () => {
-    audioElements[1].current?.play();
+    audioElement.current?.play();
     setShowFakeIntro(false);
   };
 
   const updateStep = () => {
-    audioElements[currentStep].current?.pause();
-
     const nextStep = currentStep + 1;
 
     if (
@@ -34,9 +28,9 @@ const Index = () => {
       nextStep === 2 ||
       nextStep === 3 ||
       nextStep === 4 ||
-      nextStep === 5
+      nextStep === 5 ||
+      nextStep === 6
     ) {
-      audioElements[nextStep].current?.play();
       setCurrentStep(nextStep);
     }
   };
@@ -56,21 +50,15 @@ const Index = () => {
             {currentStep === 1 && <FirstStep updateStep={updateStep} />}
             {currentStep === 2 && <SecondStep updateStep={updateStep} />}
             {currentStep === 3 && <ThirdStep updateStep={updateStep} />}
+            {currentStep === 4 && <FourthStep updateStep={updateStep} />}
             {currentStep === 5 && <FifthStep updateStep={updateStep} />}
+            {currentStep === 6 && <SixthStep />}
           </>
         )}
       </section>
 
-      <audio ref={audioElements[1]}>
-        <source src="/audio/Lovers Rock.mp3" type="audio/mpeg" />
-      </audio>
-
-      <audio ref={audioElements[2]}>
-        <source src="/audio/Melting.mp3" type="audio/mpeg" />
-      </audio>
-
-      <audio ref={audioElements[3]}>
-        <source src="/audio/Dreams Tonite.mp3" type="audio/mpeg" />
+      <audio ref={audioElement}>
+        <source src="/audio/Juliana.mp3" type="audio/mpeg" />
       </audio>
     </>
   );

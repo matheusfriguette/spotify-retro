@@ -21,7 +21,14 @@ module.exports = {
       'green': '#12D861',
       'purple': '#6D1DBA',
       'pink': '#F56EBD',
+      'light-black': '#121212',
     },
+    fontWeight: {
+      light: 300,
+      book: 400,
+      medium: 500,
+      bold: 700,
+    }
   },
   plugins: [],
 };

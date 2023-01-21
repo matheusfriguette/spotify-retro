@@ -1,0 +1,126 @@
+@keyframes background {
+  to {
+    background-position: -200px -200px;
+  }
+}
+
+@keyframes monogram1 {
+  to {
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@keyframes monogram2 {
+  to {
+    height: 100vh;
+    width: 100vw;
+    background-color: #12d861;
+    background-image: none !important;
+    display: flex;
+    direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@keyframes firstText1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes firstText2 {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes secondText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes image {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes imageMonogram {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.firstBackground {
+  animation: background 4s linear infinite;
+  background-size: 200px 200px;
+  background-color: transparent;
+}
+
+.secondBackground {
+  animation: background 4s linear infinite;
+  background-size: 200px 200px;
+  background-color: transparent;
+  transform: scale(-1, 1);
+}
+
+.thirdBackground {
+  animation: background 4s linear infinite;
+  background-size: 200px 200px;
+  background-color: transparent;
+  transform: scale(1, -1);
+}
+
+.fourthBackground {
+  animation: background 4s linear infinite;
+  background-size: 200px 200px;
+  background-color: transparent;
+  transform: scale(-1, -1);
+}
+
+.monogram {
+  animation: monogram1 1s ease-out forwards, monogram2 1s ease-out 4s forwards;
+}
+
+.firstText {
+  animation: firstText1 500ms ease-out 500ms forwards,
+    firstText2 500ms ease-out 4s forwards;
+}
+
+.secondText {
+  animation: secondText 500ms ease-out 5s forwards;
+}
+
+.firstImageMonogram {
+  animation: image 500ms ease-out 5s forwards;
+}
+
+.secondImageMonogram {
+  animation: image 500ms ease-out 5.25s forwards,
+    imageMonogram 30s linear 5.75s infinite;
+}
+
+.thirdImageMonogram {
+  animation: image 500ms ease-out 5.5s forwards;
+}
+
+.image {
+  animation: image 500ms ease-out 6s forwards;
+}

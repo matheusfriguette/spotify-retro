@@ -1,7 +1,6 @@
 import type { AppProps } from "next/app";
 import localFont from "@next/font/local";
 import "../styles/index.css";
-import "../styles/animations.css";
 
 const spotifyFont = localFont({
   src: [
@@ -12,13 +11,13 @@ const spotifyFont = localFont({
     },
     {
       path: "../public/font/GothamBook.ttf",
-      weight: "350",
+      weight: "400",
       style: "normal",
     },
     {
       path: "../public/font/GothamMedium.ttf",
-      weight: "400",
-      style: "italic",
+      weight: "500",
+      style: "normal",
     },
     {
       path: "../public/font/GothamBold.ttf",

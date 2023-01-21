@@ -1,0 +1,213 @@
+@keyframes background1 {
+  to {
+    background-color: #ff8a22;
+  }
+}
+
+@keyframes background2 {
+  to {
+    background-color: #6d1dba;
+  }
+}
+
+@keyframes firstCloud1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes firstCloud2 {
+  to {
+    background-image: url("/assets/fourth-step/7.svg");
+  }
+}
+
+@keyframes firstCloud3 {
+  to {
+    background-image: url("/assets/fourth-step/8.svg");
+  }
+}
+
+@keyframes firstCloud4 {
+  to {
+    background-position: 860px 0px;
+  }
+}
+
+@keyframes secondCloud1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes secondCloud2 {
+  to {
+    background-image: url("/assets/fourth-step/9.svg");
+  }
+}
+
+@keyframes secondCloud3 {
+  to {
+    background-image: url("/assets/fourth-step/10.svg");
+  }
+}
+
+@keyframes secondCloud4 {
+  to {
+    background-position: -430px 0px;
+  }
+}
+
+@keyframes thirdCloud1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes thirdCloud2 {
+  to {
+    background-image: url("/assets/fourth-step/11.svg");
+  }
+}
+
+@keyframes thirdCloud3 {
+  to {
+    background-image: url("/assets/fourth-step/12.svg");
+  }
+}
+
+@keyframes thirdCloud4 {
+  to {
+    background-position: 860px 0px;
+  }
+}
+
+@keyframes firstSun1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes firstSun2 {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes firstSun3 {
+  to {
+    bottom: 180px;
+  }
+}
+
+@keyframes secondSun1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes secondSun2 {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes secondSun3 {
+  to {
+    bottom: 380px;
+  }
+}
+
+@keyframes thirdSun1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes thirdSun2 {
+  to {
+    bottom: 800px;
+  }
+}
+
+@keyframes firstText1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes firstText2 {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes secondText1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes secondText2 {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes thirdText1 {
+  to {
+    opacity: 1;
+  }
+}
+
+.background {
+  animation: background1 0.5s ease-out 6s forwards,
+    background2 0.5s ease-out 12s forwards;
+}
+
+.firstCloud {
+  background-position: 430px 0px;
+  animation: firstCloud1 1s linear forwards, firstCloud2 1s linear 6s forwards,
+    firstCloud3 1s linear 12s forwards, firstCloud4 30s linear infinite;
+}
+
+.secondCloud {
+  background-position: 0px 0px;
+  animation: secondCloud1 1s linear forwards, secondCloud2 1s linear 6s forwards,
+    secondCloud3 1s linear 12s forwards, secondCloud4 30s linear infinite;
+}
+
+.thirdCloud {
+  background-position: 430px 0px;
+  animation: thirdCloud1 1s linear forwards, thirdCloud2 1s linear 6s forwards,
+    thirdCloud3 1s linear 12s forwards, thirdCloud4 30s linear infinite;
+}
+
+.firstSun {
+  animation: firstSun1 0.5s ease-out 0.5s forwards,
+    firstSun2 0.5s ease-out 6s forwards, firstSun3 6s linear forwards;
+}
+
+.secondSun {
+  animation: secondSun1 0.5s ease-out 6.5s forwards,
+    secondSun2 0.5s ease-out 12s forwards, secondSun3 6s linear 6s forwards;
+}
+
+.thirdSun {
+  animation: thirdSun1 0.5s ease-out 12.5s forwards,
+    thirdSun2 6s linear 12s forwards;
+}
+
+.firstText {
+  animation: firstText1 0.5s ease-out 0.5s forwards,
+    firstText2 0.5s ease-out 6s forwards;
+}
+
+.secondText {
+  animation: secondText1 0.5s ease-out 6.5s forwards,
+    secondText2 0.5s ease-out 12s forwards;
+}
+
+.thirdText {
+  animation: thirdText1 0.5s ease-out 12.5s forwards;
+}

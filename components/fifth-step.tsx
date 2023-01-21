@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useEffect } from "react";
 import styles from "../styles/animations/fifth-step.module.css";
 
@@ -8,12 +7,12 @@ type Props = {
 
 const FifthStep = ({ updateStep }: Props) => {
   useEffect(() => {
-    // const mainTimer = setTimeout(() => {
-    //   updateStep();
-    // }, 8000);
-    // return () => {
-    //   clearTimeout(mainTimer);
-    // };
+    const mainTimer = setTimeout(() => {
+      updateStep();
+    }, 15000);
+    return () => {
+      clearTimeout(mainTimer);
+    };
   }, []);
 
   return (
@@ -35,8 +34,8 @@ const FifthStep = ({ updateStep }: Props) => {
         <div
           className={`absolute flex w-[300px] scale-0 items-center justify-center opacity-0 ${styles.monogramText}`}
         >
-          <div className="text-center text-2xl font-bold tracking-tighter">
-            Todo esse tempo se amando somou
+          <div className="text-center text-2xl font-medium tracking-tighter">
+            E todos esses dias somados
           </div>
         </div>
 
@@ -47,9 +46,11 @@ const FifthStep = ({ updateStep }: Props) => {
               style={{ backgroundImage: "url('/assets/fifth-step/3.svg')" }}
             ></div>
             <div
-              className={`scale-0 text-center text-lg font-bold tracking-tighter opacity-0 ${styles.imageText}`}
+              className={`scale-0 text-center text-lg font-medium tracking-tighter opacity-0 ${styles.imageText}`}
             >
-              Nesses 3 meses
+              Durante esses 3 meses, eu amei você por{" "}
+              <span className="font-bold">132,480</span> minutos. Isso é mais
+              que <span className="font-bold">100%</span> da média da população.
             </div>
           </div>
         </div>

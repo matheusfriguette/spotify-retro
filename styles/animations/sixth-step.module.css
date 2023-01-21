@@ -1,0 +1,133 @@
+@keyframes firstStar {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes secondStar {
+  0% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+@keyframes toOpacity1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes toOpacity0 {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes monogram1 {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@keyframes monogram2 {
+  from {
+    width: 360px;
+    height: 360px;
+  }
+  to {
+    width: 100vw;
+    height: 100vh;
+    background-color: #12d861;
+    background-image: none !important;
+  }
+}
+
+@keyframes toScale1 {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes imageMonogram {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.firstStar {
+  animation: firstStar 3s linear infinite;
+  filter: drop-shadow(0px 0px 5px #ffffff);
+}
+
+.secondStar {
+  animation: secondStar 3s linear infinite;
+  filter: drop-shadow(0px 0px 5px #ffffff);
+}
+
+.firstText {
+  animation: toOpacity1 0.5s ease-out forwards;
+}
+
+.secondText {
+  animation: toOpacity1 0.5s ease-out 6s forwards,
+    toOpacity0 0.5s ease-out 10s forwards;
+}
+
+.thirdText {
+  animation: toOpacity1 0.5s ease-out 11s forwards;
+}
+
+.monogram {
+  animation: monogram1 1s ease-out 5s forwards,
+    monogram2 1s ease-out 10s forwards;
+}
+
+.firstImage {
+  animation: toScale1 1s ease-out 12.5s forwards;
+}
+
+.firstImageMonogram {
+  animation: toScale1 1s ease-out 12s forwards, imageMonogram 30s linear 13s infinite;
+}
+
+.secondImage {
+  animation: toScale1 1s ease-out 13.5s forwards;
+}
+
+.secondImageMonogram {
+  animation: toScale1 1s ease-out 13s forwards, imageMonogram 30s linear 14s infinite;
+}
+
+
+.thirdImage {
+  animation: toScale1 1s ease-out 14.5s forwards;
+}
+
+.thirdImageMonogram {
+  animation: toScale1 1s ease-out 14s forwards, imageMonogram 30s linear 15s infinite;
+}
+
