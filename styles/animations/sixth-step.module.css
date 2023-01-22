@@ -101,6 +101,10 @@
   animation: toOpacity1 0.5s ease-out 11s forwards;
 }
 
+.fourthText {
+  animation: toOpacity1 0.5s ease-out 16s forwards;
+}
+
 .monogram {
   animation: monogram1 1s ease-out 5s forwards,
     monogram2 1s ease-out 10s forwards;

@@ -46,14 +46,14 @@ const SixthStep = () => {
 
           <div className="absolute top-0 mt-12 w-full overflow-hidden px-4">
             <div
-              className={`relative z-[60] text-start leading-loose text-2xl font-medium tracking-tighter opacity-0 ${styles.thirdText}`}
+              className={`relative z-[60] text-start text-xl font-medium leading-loose tracking-tighter opacity-0 ${styles.thirdText}`}
             >
               Muito obrigado por tudo
             </div>
-            <div className="mt-4 flex flex-col justify-between gap-4">
-              <div className="relative flex h-48 items-center justify-center">
+            <div className="mt-2 flex flex-col justify-between gap-4">
+              <div className="relative flex h-44 items-center justify-center">
                 <div
-                  className={`absolute flex h-48 w-48 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.firstImageMonogram}`}
+                  className={`absolute flex h-44 w-44 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.firstImageMonogram}`}
                   style={{
                     backgroundImage: "url('/assets/sixth-step/3.svg')",
                   }}
@@ -66,9 +66,9 @@ const SixthStep = () => {
                   alt="star"
                 />
               </div>
-              <div className="relative flex h-48 items-center justify-center">
+              <div className="relative flex h-44 items-center justify-center">
                 <div
-                  className={`absolute flex h-48 w-48 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.secondImageMonogram}`}
+                  className={`absolute flex h-44 w-44 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.secondImageMonogram}`}
                   style={{
                     backgroundImage: "url('/assets/sixth-step/4.svg')",
                   }}
@@ -81,9 +81,9 @@ const SixthStep = () => {
                   alt="star"
                 />
               </div>
-              <div className="relative flex h-48 items-center justify-center">
+              <div className="relative flex h-44 items-center justify-center">
                 <div
-                  className={`absolute flex h-48 w-48 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.thirdImageMonogram}`}
+                  className={`absolute flex h-44 w-44 scale-0 items-center justify-center bg-center bg-no-repeat opacity-0 ${styles.thirdImageMonogram}`}
                   style={{
                     backgroundImage: "url('/assets/sixth-step/5.svg')",
                   }}
@@ -95,6 +95,12 @@ const SixthStep = () => {
                   src="/image/IMG_0230.JPG"
                   alt="star"
                 />
+              </div>
+              <div
+                className={`relative z-[60] text-center font-medium leading-loose tracking-tighter opacity-0 ${styles.fourthText}`}
+              >
+                <div>De Matheus para a melhor namorada do mundo</div>
+                <div>22/01/2023</div>
               </div>
             </div>
           </div>
